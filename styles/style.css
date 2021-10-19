@@ -1,0 +1,53 @@
+html, body {
+    height: 100%;
+    margin: 0px;
+    overflow-x: hidden
+}
+
+.fade-in-up-1s {
+    opacity:0;
+    animation: fadeIn ease-in-out 1250ms forwards;
+    animation-delay: 1250ms;
+}
+
+.fade-in-up {
+    opacity: 0;
+    animation: fadeIn ease-in-out 1250ms forwards;
+    animation-delay: 100ms;
+}
+
+.shadowed {
+    text-shadow: 3px 3px black
+}
+
+.banner {
+    background-image: url('../images/wallpaper0.png');
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.container {
+    padding: 2%
+}
+
+.img-thumbnail {
+    margin-top: 25%;
+    margin-bottom: 0%;
+}
+
+.float-right {
+    text-align: right;
+}
+
+@keyframes fadeIn {
+    0% { 
+        opacity:0;
+        top: 100px;  
+    }
+    100% {
+        opacity:1;
+        top: 0px; 
+    }
+}
