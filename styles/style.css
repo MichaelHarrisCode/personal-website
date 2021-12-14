@@ -21,11 +21,31 @@ html, body {
 }
 
 .banner {
-    background-image: url('../images/wallpaper0.png');
+    background-image: url('../images/background.png');
     background-size: cover;
     height: 100%;
     width: 100%;
     position: relative;
+    font-family: Verdana, Arial, sans-serif;
+}
+
+.banner-bottom {
+    position: absolute;
+    bottom: 20px;
+    left: 10px;
+    font-size: 20px;
+}
+
+.banner-bottom a {
+    color: lightgray;
+}
+
+.banner-bottom a:hover {
+    color: darkgray;
+}
+
+.banner-bottom a:active {
+    color: gray;
 }
 
 .container {
