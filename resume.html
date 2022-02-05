@@ -6,6 +6,7 @@
     <title>Resume</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles/style.css">
+    <script src="scripts/script.js"></script>
 </head>
 
 <body class="bg-light bg-gradient">
@@ -20,7 +21,7 @@
                 <a class="nav-link" href="portfolio.html">Portfolio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" target="_blank" href="https://github.com/theTerrance">GitHub</a>
+                <a class="nav-link" onclick="return leavingSite();" href="https://github.com/theTerrance">GitHub</a>
               </li>
             </ul>
         </div>
@@ -29,15 +30,15 @@
     <div class="banner">
         <div class="banner-content">
             <div class="row">
-                <div class="col">
+                <div class="col bg-dark black-box-border mx-3">
                     <!--Insert image here or somn... maybe
                         Could also go in more depth on my bio-->
-                    <h1 class="text-center text-white text-shadowed-black font-weight-bold">Who am I?</h1><br>
+                    <h1 class="text-center text-white text-shadowed-black font-weight-bold py-2">Who am I?</h1>
                     <div class="mx-5 px-2">
                         <!--Probably do different image-->
                         <img class="mt-0 mb-3 img-thumbnail rounded-circle border border-dark" src="images/face.jpg">
                     </div>
-                    <p class="h4 text-gray">
+                    <p class="h4 text-white">
                         Hi, I'm Michael Harris. I'm an enthusiastic computer science student who's eager to 
                         contribute to team success through attention to detail, hard work and excellent
                         organizational skills. I have a clear understanding of C++ and Python.
@@ -46,13 +47,37 @@
                     </p><br>
                     <div class="align-bottom text-center gray-link h3"><a target="_blank" href="files/Michael_Harris_Resume_11-2021.pdf" download>Download Resume</a></div>
                 </div>
-                <div class="col">
-                    <h1 class="text-center text-white text-shadowed-black font-weight-bold">What have I done?</h1><br>
-                    
+                <div class="col bg-dark black-box-border mx-3">
+                    <h1 class="text-center text-white text-shadowed-black font-weight-bold py-2">What have I done?</h1><br>
+                    <ul class="text-white h4">
+                        <li>
+                            <b>Programmer Intern</b>
+                            <br>
+                            T.A.P. Series
+                            <br>
+                            Jan 2022 - <b>Current</b>
+                            <ul class="h5">
+                                <li>Develop and maintain courses</li>
+                            </ul>
+                        </li>
+                        <br>
+                        <li>
+                            <b>Course Embedded Tutor</b>
+                            <br>
+                            Moorpark College
+                            <br>
+                            Jan 2021 - Dec 2021
+                            <ul class="h5">
+                                <li>Tutoring students in C++</li>
+                                <li>Creating a welcoming environment for students</li>
+                                <li>Helping students develop a programmer's mindset</li>
+                            </ul>
+                        </li>
+                    </ul>
                 </div>
-                <div class="col">
-                    <h1 class="text-center text-white text-shadowed-black font-weight-bold">What can I offer?</h1><br>
-                    <ul class="text-gray h4">
+                <div class="col bg-dark black-box-border mx-3">
+                    <h1 class="text-center text-white text-shadowed-black font-weight-bold py-2">What can I offer?</h1><br>
+                    <ul class="text-white h4">
                         <li>
                             Problem Solving
                         </li>
