@@ -1,96 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<!--Maybe I could make the navbar a seperate HTML file that
+		is imported in each file? 
+
+		How am I gonna work the email/phone number? I want it in the
+		collapsed navar, but also on the right of the navabar. Perhaps
+		I could give it a different link color?-->
+
 <head>
-    <meta charset="UTF-8">
-    <title>Home</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="styles/style.css">
-    <script src="scripts/script.js"></script>
+	<meta charset="UTF-8">
+	<title>Home</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="styles/style.css">
+	<link rel="stylesheet" href="styles/index.css">
+	<script src="scripts/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
 <body class="bg-light bg-gradient">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-1 fixed-top">
-        <a class="navbar-brand" href="">Home</a>
-        <div class="navbar-collapse collapse">
-            <ul class="navbar-nav mr-auto mt-2 mt-md-0">
-              <li class="nav-item">
-                <a class="nav-link" href="resume.html">Resume </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="portfolio.html">Portfolio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" onclick="return leavingSite();" href="https://github.com/theTerrance">GitHub</a>
-              </li>
-            </ul>
-        </div>
-    </nav>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark py-1 fixed-top">
+		<a class="navbar-brand" href="#">Home</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="navbar-collapse collapse" id="collapsibleNavbar">
+			<ul class="navbar-nav">
+			  <li class="nav-item">
+					<a class="nav-link" href="resume.html">Resume </a>
+			  </li>
+			  <li class="nav-item">
+					<a class="nav-link" href="portfolio.html">Portfolio</a>
+			  </li>
+			  <li class="nav-item">
+					<a class="nav-link" target="_blank" onclick="return leavingSite();" href="https://github.com/theTerrance">GitHub</a>
+			  </li>
+			</ul>
+			<ul class="navbar-nav ml-auto">
+			  <li class="nav-item">
+					<a class="nav-link" href="">[REDACTED]</a>
+			  </li>
+			  <li class="nav-item">
+					<a class="nav-link" href="">[REDACTED]</a>
+			  </li>
+			</ul>
+		</div>
+	</nav>
 
-
-    <div class="banner">
-        <div class="container p-2 pt-5" style="width: 25%;">
-            <div class="mt-4">
-                <img class="mt-5 img-thumbnail rounded-circle fade-in border border-dark" src="images/face.jpg">
-            </div>
-        </div>
-        <div class="fade-in-1s text-center text-white text-shadowed-black">
-            <h1 class="display-2 font-weight-bold">Michael Harris</h1>
-            <h1>Computer Science Student</h3>
-        </div>
-        <div class="banner-bottom text-white gray-link">
-            Phone: <a href="">[REDACTED]</a>
-            <br>
-            Email: <a href="">[REDACTED]</a>
-        </div>
-    </div>
-    
-
-<!--
-    <div class="row">
-        <div class="col-sm-12">
-            <div class="container float-left">
-                <h1 class="display-1 font-weight-bold">Who am I?</h1>
-                <p class="display-4" style="margin: 50px 0px 50px 0px">
-                    Enthusiastic computer science student eager to contribute to team
-                    success through attention to detail, hard work and excellent
-                    organizational skills. Clear understanding of C++ and Python.
-                    Training in programming and software development. Motivated to
-                    learn, grow and excel in the world of computer science.
-                </p>
-            </div>  
-        </div>
-    </div>      
-
-    <div class="row">
-        <div class="col-sm-12">
-            <div class="container display-4 float-right">
-                <h2 class="display-2 font-weight-bold">What can I offer?</h2>
-                <br>
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item">
-                        Problem Solving
-                    </li>
-                    <li class="list-group-item">
-                        C/C++
-                    </li>
-                    <li class="list-group-item">
-                        Python
-                    </li>
-                    <li class="list-group-item">
-                        Web Development: HTML, CSS, and JavaScript
-                    </li>
-                    <li class="list-group-item">
-                        Linux
-                    </li>
-                    <li class="list-group-item">
-                        Mathematics: Calculus II
-                    </li>
-                </ul>
-            </div>
-        </div>  
-    </div>
--->
-    
+	<div class="banner">
+		<div class="container p-2 pt-5 noselect" style="width: 25%;">
+			<!-- Lol. I only did this div for the margin-top -->
+			<div class="mt-4">
+				<img class="mt-5 img-thumbnail rounded-circle fade-in border border-dark" src="images/face.jpg">
+			</div>
+		</div>
+		<div class="fade-in-1s text-center text-white text-shadowed-black">
+			<h1 class="display-2 font-weight-bold">Michael Harris</h1>
+			<h1>Computer Science Student</h3>
+		</div>
+	</div>
 </body>
 </html>
+
+
+
+<!--
+	Probably gonna have to strip down on bootstrap classes
+	so that it'll be simpler (and easier) to implement both
+	mobile and desktop resolution sizes.
+
+	Should this have it's own CSS file? Probably.
+	A general one (Probably for navbar crap) and page specific
+	ones.
+-->
