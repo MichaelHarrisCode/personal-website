@@ -1,30 +1,34 @@
 html, body {
     height: 100%;
     margin: 0px;
-    overflow-x: hidden
+    overflow-x: hidden;
+    background-image: url('../images/background.png');
 }
 
-.fade-in-up-1s {
+.fade-in-1s {
     opacity:0;
     animation: fadeIn ease-in-out 1250ms forwards;
     animation-delay: 1250ms;
 }
 
-.fade-in-up {
+.fade-in {
     opacity: 0;
     animation: fadeIn ease-in-out 1250ms forwards;
     animation-delay: 100ms;
 }
 
-.shadowed {
+.text-shadowed-black {
     text-shadow: 3px 3px black
 }
 
+.black-box-border {
+    box-shadow: 10px 10px;
+    border-radius: 20px;
+}
+
 .banner {
-    background-image: url('../images/background.png');
-    background-size: cover;
-    height: 100%;
-    width: 100%;
+    height: auto;
+    width: auto;
     position: relative;
     font-family: Verdana, Arial, sans-serif;
 }
@@ -36,38 +40,141 @@ html, body {
     font-size: 20px;
 }
 
-.banner-bottom a {
+.banner-content {
+    padding-top: 96px;
+    margin-left: 128px;
+    margin-right: 128px;
+}
+
+.gray-link a {
     color: lightgray;
 }
 
-.banner-bottom a:hover {
+.gray-link a:hover {
     color: darkgray;
 }
 
-.banner-bottom a:active {
+.gray-link a:active {
     color: gray;
-}
-
-.container {
-    padding: 2%
-}
-
-.img-thumbnail {
-    margin-top: 25%;
-    margin-bottom: 0%;
-}
-
-.float-right {
-    text-align: right;
 }
 
 @keyframes fadeIn {
     0% { 
         opacity:0;
-        top: 100px;  
     }
     100% {
         opacity:1;
-        top: 0px; 
+    }
+}
+
+.noselect {
+    user-select:  none;
+}
+
+
+
+
+/* Media sizes for navbar lol */
+@media only screen and (max-width: 2560px) {
+    .navbar {
+        font-size: 40px;
+    }
+
+    .navbar-brand {
+        font-size: 50px;
+    }
+
+    .nav-item {
+        margin-left: 10px;
+    }
+
+    .nav-item {
+        margin-right: 10px;
+    }
+}
+
+@media only screen and (max-width: 1920px) {
+    .navbar {
+        font-size: 18px;
+    }
+
+    .navbar-brand {
+        font-size: 20px;
+    }
+
+    .nav-item {
+        margin-left: 5px;
+    }
+
+    .nav-item {
+        margin-right: 5px;
+    }
+}
+
+@media only screen and (max-width: 1440px) {
+    .navbar {
+        font-size: 20px;
+    }
+
+    .navbar-brand {
+        font-size: 24px;
+    }
+
+    .nav-item {
+        margin-left: 2px;
+    }
+
+    .nav-item {
+        margin-right: 2px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .navbar {
+        font-size: 18px;
+    }
+
+    .navbar-brand {
+        font-size: 22px;
+    }
+}
+
+@media only screen and (max-width: 912px) {
+    .navbar {
+        font-size: 32px;
+    }
+
+    .navbar-brand {
+        font-size: 38px;
+    }
+}
+
+@media only screen and (max-width: 540px) {
+   .navbar {
+        font-size: 25px;
+    }
+
+    .navbar-brand {
+        font-size: 27px;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .navbar {
+        font-size: 20px;
+    }
+
+    .navbar-brand {
+        font-size: 23px;
+    }
+}
+
+@media only screen and (max-width: 280px) {
+   .navbar {
+        font-size: 18px;
+    }
+
+    .navbar-brand {
+        font-size: 22px;
     }
 }
