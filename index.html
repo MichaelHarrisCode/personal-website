@@ -2,14 +2,11 @@
 <html lang="en">
 
 <!--Maybe I could make the navbar a seperate HTML file that
-		is imported in each file? 
-
-		How am I gonna work the email/phone number? I want it in the
-		collapsed navar, but also on the right of the navabar. Perhaps
-		I could give it a different link color?-->
+		is imported in each file? -->
 
 <head>
 	<meta charset="UTF-8">
+	<meta content="width=device-width, initial-scale=1" name="viewport">
 	<title>Home</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 	<link rel="stylesheet" href="styles/style.css">
@@ -32,15 +29,18 @@
 					<a class="nav-link" href="resume.html">Resume </a>
 			  </li>
 			  <li class="nav-item">
-					<a class="nav-link" href="portfolio.html">Portfolio</a>
+					<a class="nav-link disabled" href="portfolio.html">Portfolio</a>
 			  </li>
 			  <li class="nav-item">
-					<a class="nav-link" target="_blank" onclick="return leavingSite();" href="https://github.com/theTerrance">GitHub</a>
+					<a class="nav-link" target="_blank" href="https://github.com/theTerrance">GitHub</a>
 			  </li>
 			</ul>
 			<ul class="navbar-nav ml-auto">
 			  <li class="nav-item">
-					<a class="nav-link" href="">[REDACTED]</a>
+			  	<br class="noselect">
+			  </li>
+			  <li class="nav-item">
+			  	<a class="nav-link" href="">[REDACTED]</a>
 			  </li>
 			  <li class="nav-item">
 					<a class="nav-link" href="">[REDACTED]</a>
@@ -50,28 +50,13 @@
 	</nav>
 
 	<div class="banner">
-		<div class="container p-2 pt-5 noselect" style="width: 25%;">
-			<!-- Lol. I only did this div for the margin-top -->
-			<div class="mt-4">
-				<img class="mt-5 img-thumbnail rounded-circle fade-in border border-dark" src="images/face.jpg">
-			</div>
+		<div id="main-image" class="container p-2 pt-5 noselect">
+			<img class="img-thumbnail rounded-circle fade-in border border-dark" src="images/face.jpg">
 		</div>
 		<div class="fade-in-1s text-center text-white text-shadowed-black">
-			<h1 class="display-2 font-weight-bold">Michael Harris</h1>
-			<h1>Computer Science Student</h3>
+			<h1 class="font-weight-bold">Michael Harris</h1>
+			<h1>Computer Science Student</h1>
 		</div>
 	</div>
 </body>
 </html>
-
-
-
-<!--
-	Probably gonna have to strip down on bootstrap classes
-	so that it'll be simpler (and easier) to implement both
-	mobile and desktop resolution sizes.
-
-	Should this have it's own CSS file? Probably.
-	A general one (Probably for navbar crap) and page specific
-	ones.
--->
