@@ -1,0 +1,103 @@
+/* Default h1 font size is 40px
+   Default display-2 font size is 88px 
+   Default navbar height is 48px */
+
+/* Is there a way to make the navbar bigger or smaller? 
+   Aha! Increase font size! */
+
+@media only screen and (max-width: 2560px) {
+	#main-image {
+		margin-top: 224px;
+		width: 30%;
+	}
+
+	.font-weight-bold {
+		font-size: 150px;
+		text-shadow: 5px 5px black;
+	}
+
+	h1 {
+		font-size: 80px;
+		/* Little bit stupid. Should probably remove the
+		   text-shadowed-black class and manage it by @media here. */
+		text-shadow: 5px 5px black;
+	}
+}
+
+@media only screen and (max-width: 1920px) {
+	#main-image {
+		margin-top: 72px;
+		width: 25%;
+	}
+
+	.font-weight-bold {
+		font-size: 88px;
+		text-shadow: 3px 3px black;
+	}
+
+	h1 {
+		font-size: 40px;
+		text-shadow: 3px 3px black;
+	}
+}
+
+@media only screen and (max-width: 1440px) {
+	#main-image {
+		width: 30%;
+	}
+}
+
+@media only screen and (max-width: 1024px) {
+	#main-image {
+		width: 40%;
+	}
+}
+
+@media only screen and (max-width: 912px) {
+	#main-image {
+		width: 50%;
+		margin-top: 90px;
+	}
+}
+
+@media only screen and (max-width: 540px) {
+	#main-image {
+		width: 70%;
+	}
+
+	.font-weight-bold {
+		font-size: 55px;
+	}
+
+	h1 {
+		font-size: 30px;
+	}
+}
+
+@media only screen and (max-width: 375px) {
+	#main-image {
+		width: 75%;
+	}
+
+	.font-weight-bold {
+		font-size: 45px;
+	}
+
+	h1 {
+		font-size: 28px;
+	}
+}
+
+@media only screen and (max-width: 280px) {
+	#main-image {
+		width: 75%;
+	}
+
+	.font-weight-bold {
+		font-size: 35px;
+	}
+
+	h1 {
+		font-size: 20px;
+	}
+}
