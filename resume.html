@@ -3,10 +3,11 @@
 
 <head>
 	<meta charset="UTF-8">
+	<meta content="width=device-width, initial-scale=1" name="viewport">
 	<title>Home</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 	<link rel="stylesheet" href="styles/style.css">
-	<link rel="stylesheet" href="styles/index.css">
+	<link rel="stylesheet" href="styles/resume.css">
 	<script src="scripts/script.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
@@ -25,15 +26,18 @@
 					<a class="nav-link" href="#">Resume </a>
 			  </li>
 			  <li class="nav-item">
-					<a class="nav-link" href="portfolio.html">Portfolio</a>
+					<a class="nav-link disabled" href="portfolio.html">Portfolio</a>
 			  </li>
 			  <li class="nav-item">
-					<a class="nav-link" target="_blank" onclick="return leavingSite();" href="https://github.com/theTerrance">GitHub</a>
+					<a class="nav-link" target="_blank" href="https://github.com/theTerrance">GitHub</a>
 			  </li>
 			</ul>
 			<ul class="navbar-nav ml-auto">
 			  <li class="nav-item">
-					<a class="nav-link" href="">[REDACTED]</a>
+			  	<br class="noselect">
+			  </li>
+			  <li class="nav-item">
+			  	<a class="nav-link" href="">[REDACTED]</a>
 			  </li>
 			  <li class="nav-item">
 					<a class="nav-link" href="">[REDACTED]</a>
@@ -45,34 +49,36 @@
 	<div class="banner">
 		<div class="banner-content">
 			<div class="row">
-				<div class="col bg-dark black-box-border mx-3">
+				<div class="col-xl bg-dark black-box-border mx-3 mb-4">
 					<!--Insert image here or somn... maybe
 						Could also go in more depth on my bio-->
 					<h1 class="text-center text-white text-shadowed-black font-weight-bold py-2">Who am I?</h1>
-					<div class="mx-5 px-2 noselect">
+					<div id="image-div" class="px-2 noselect"> <!-- mx-5 -->
 						<!--Probably do different image-->
-						<img class="mt-0 mb-3 img-thumbnail rounded-circle border border-dark" src="images/face.jpg">
+						<img class="mb-3 img-thumbnail rounded-circle border border-dark" src="images/face.jpg">
 					</div>
-					<p class="h4 text-white">
+					<p class="h4 text-white text">
 						Hi, I'm Michael Harris. I'm an enthusiastic computer science student who's eager to 
 						contribute to team success through attention to detail, hard work and excellent
 						organizational skills. I have a clear understanding of C++ and Python.
 						I'm currently being educated in programming and software development. Motivated to
 						learn, grow and excel in the world of computer science.
 					</p><br>
-					<div class="align-bottom text-center gray-link h3"><a target="_blank" href="files/Michael_Harris_Resume_11-2021.pdf" download>Download Full Resume</a></div>
+					<div class="align-bottom text-center gray-link h3 text"><a target="_blank" href="files/Michael_Harris_Resume_11-2021.pdf" download>Download Full Resume</a></div>
 				</div>
-				<div class="col bg-dark black-box-border mx-3">
+				<div class="col-xl bg-dark black-box-border mx-3 mb-4">
 					<h1 class="text-center text-white text-shadowed-black font-weight-bold py-2">What have I done?</h1><br>
-					<ul class="text-white h4">
+					<ul class="text-white h4 text">
 						<li>
 							<b>Programmer Intern</b>
 							<br>
 							[REDACTED]
 							<br>
 							Jan 2022 - <b>Current</b>
-							<ul class="h5">
-								<li>Develop and maintain courses</li>
+							<ul class="h5 text">
+								<li>Create and maintain courses</li>
+								<li>Develop python scripts</li>
+								<li>Improve usability for customers</li>
 							</ul>
 						</li>
 						<br>
@@ -82,7 +88,7 @@
 							[REDACTED]
 							<br>
 							Jan 2021 - Dec 2021
-							<ul class="h5">
+							<ul class="h5 text">
 								<li>Tutoring students in C++</li>
 								<li>Creating a welcoming environment for students</li>
 								<li>Helping students develop a programmer's mindset</li>
@@ -90,9 +96,9 @@
 						</li>
 					</ul>
 				</div>
-				<div class="col bg-dark black-box-border mx-3">
+				<div class="col-xl bg-dark black-box-border mx-3 mb-4">
 					<h1 class="text-center text-white text-shadowed-black font-weight-bold py-2">What can I offer?</h1><br>
-					<ul class="text-white h4">
+					<ul class="text-white h4 text">
 						<li>
 							Problem Solving
 						</li>
@@ -103,7 +109,8 @@
 							Python
 						</li>
 						<li>
-							Web Development: HTML, CSS, and JavaScript                                </li>
+							Web Development: HTML, CSS, and JavaScript                                
+						</li>
 						<li>
 							Linux
 						</li>
