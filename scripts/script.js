@@ -25,7 +25,8 @@ function randomGradient() {
 	document.body.style['background-attachment'] = "fixed";
 }
 
-// When window opens, setup the background
+// When window opens, setup the background and load the navbar
 document.addEventListener('DOMContentLoaded', (event) => {
     randomGradient();
+    $("#navbar-placeholder").load("navbar.html");
 });

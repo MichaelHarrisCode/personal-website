@@ -58,6 +58,15 @@ body {
 
 .navbar {
     font-family: Courier New, monospace, Arial;
+    border-bottom: 3px solid black;
+}
+
+.navbar a {
+    border-bottom: 3px solid transparent;
+}
+
+.navbar a:hover {
+    border-color: grey;
 }
 
 .gray-link a {
@@ -143,6 +152,10 @@ body {
 
     .nav-item {
         margin-right: 2px;
+    }
+
+    .col-xl {
+        width: 100%;
     }
 }
 
