@@ -4,9 +4,6 @@
  * 
  */
 var json_files;
-$.getJSON("portfolio/files.json", function(data) {
-	json_files = data;
-});
 
 var curr_json = 0;
 
@@ -98,5 +95,8 @@ function prev_json() {
 }
 
 $(document).ready(function() {
-	set_data(json_files[curr_json]);
+	$.getJSON("portfolio/files.json", function(data) {
+		json_files = data;
+		set_data(json_files[curr_json]);
+	});
 });
