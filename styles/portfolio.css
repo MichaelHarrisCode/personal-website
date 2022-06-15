@@ -29,10 +29,12 @@
 	background-color: darkgray;
 	margin-left: 80px;
 	margin-right: 80px;
+	pointer-events: auto;
 }
 
 #button-div {
 	height: 120px;
+	pointer-events: none;
 }
 
 .project-button:hover {
