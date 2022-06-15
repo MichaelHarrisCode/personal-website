@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta content="width=device-width, initial-scale=1" name="viewport">
+	<title>My Portfolio - Michael Harris Code</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="styles/style.css">
+	<script src="scripts/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+
+  <link rel="stylesheet" href="styles/portfolio.css">
+  <script src="scripts/portfolio.js"></script>
+</head>
+
+<body class="bg-gradient">
+	<div id="navbar-placeholder"></div>
+	<div class="banner">
+		<div class="banner-content">
+			<h1 id="title" class="text-center text-white font-weight-bold text-shadowed-black"></h1>
+			<div class="row">
+				<div class="col-xl">
+					<div id="image-div" class="row bg-dark black-box-border">
+						<div class="col">
+							<img id="image-element" class="img-thumbnail">
+						</div>
+					</div>
+					<div id="skills-div" class="row bg-dark black-box-border">
+						<div class="col">
+							<h1 class="text-center text-white text-shadowed-black font-weight-bold py-2">Skills Applied</h1>
+							<ul id="skills-element" class="h5 text-white"></ul>
+						</div>
+					</div>
+				</div>
+				<div id="about-div" class="col-xl bg-dark black-box-border">
+					<h1 class="text-center text-white text-shadowed-black font-weight-bold py-2">About</h1>
+					<div id="about-text"></div>
+					<div class="gray-link text-center h4">
+						<hr color="white">
+						<a id="github-link" target="_blank">GitHub Repository</a>
+					</div>
+				</div>
+			</div>
+			<br>
+			<div id="button-div" class="fixed-bottom">
+				<input class="project-button" type="button" value="<" onclick="prev_json()">
+				<input class="project-button float-right" type="button" value=">" onclick="next_json()">
+			</div>
+		</div>
+	</div>
+</body>
+</html>

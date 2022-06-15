@@ -1,0 +1,16 @@
+{
+	"title":"Personal Website",
+	"image": "images/website.png",
+	"skills": [
+		"HTML",
+		"CSS",
+		"JavaScript",
+		"jQuery"
+	],
+	"about": [
+		"Yup, this is the website you're currently on! This is my portfolio website, which I programmed by hand using mainly HTML and CSS, with some JavaScript and jQuery.",
+		"The goal of this website was to create a centralized website that contains my resume and portfolio, in addition to directly demonstrating what I can make. I wanted to be able to direct anyone to my website at any time, so that they'd be able to see what I can do, and what I've made.",
+		"At heart, I'm not much of a web developer. Because of this, my favorite components of this website are the ones built using JavaScript and jQuery, because they reminded me more of the programming I'm used to. Specifically, I'm proud of, and enjoyed making, the breathing background and the animation on this page when you change projects."
+	],
+	"github": "https://github.com/MichaelHarrisCode/personal-website"
+}

@@ -1,0 +1,191 @@
+#image-div {
+	margin-bottom: 16px;
+}
+
+.row {
+	padding:  16px;
+}
+
+.col-xl {
+	margin-left: 16px;
+	margin-right: 16px;
+}
+
+.fade {
+	animation: fade_out linear 500ms forwards;
+}
+
+.fade-back {
+	animation: fade_back linear 500ms forwards;
+}
+
+.project-button {
+	border-radius: 50%;
+	border-style:  solid;
+	opacity: 0.7;
+	font-size: 50px;
+	height: 80px;
+	width: 80px;
+	background-color: darkgray;
+	margin-left: 80px;
+	margin-right: 80px;
+}
+
+#button-div {
+	height: 120px;
+}
+
+.project-button:hover {
+	background-color: gray;
+}
+
+@keyframes fade_out {
+	0% {
+		opacity: 1;
+	}
+
+	100% {
+		opacity: 0;
+		visibility: hidden;
+	}
+}
+
+@keyframes fade_back {
+	0% {
+		opacity: 0;
+		visibility: visible;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+
+@media only screen and (max-width: 2560px) {
+	.row {
+		margin-top: 100px;
+	}
+
+	h1 {
+		font-size: 100px;
+	}
+
+	.text {
+		font-size: 48px;
+	}
+
+	.h5 {
+		font-size: 42px;
+	}
+
+	.gray-link {
+		font-size: 50px;
+	}
+}
+
+@media only screen and (max-width: 1920px) {
+	.row {
+		margin-top: 10px;
+	}
+
+	h1 {
+		font-size: 40px;
+	}
+
+	.text {
+		font-size: 24px;
+	}
+
+	.h5 {
+		font-size: 20px;
+	}
+
+	.gray-link {
+		font-size: 24px;
+	}
+}
+
+@media only screen and (max-width: 1200px) {
+	#about-div {
+		margin-top: 16px;
+	}
+}
+
+@media only screen and (max-width: 912px) {
+	.banner-content {
+		margin-left: 48px;
+		margin-right: 48px;
+	}
+
+	h1 {
+		font-size: 60px;
+	}
+
+	.text {
+		font-size: 36px;
+	}
+
+	.h5 {
+		font-size: 32px;
+	}
+
+	.project-button {
+		margin-left: 40px;
+		margin-right: 40px;
+	}
+}
+
+@media only screen and (max-width: 540px) {
+	.banner-content {
+		margin-left: 16px;
+		margin-right: 16px;
+	}
+
+	h1 {
+		font-size: 40px;
+	}
+
+	.text {
+		font-size: 24px;
+	}
+
+	.h5 {
+		font-size: 20px;
+	}
+
+	#button-div {
+		height: 100px;
+	}
+
+	.project-button {
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+}
+
+@media only screen and (max-width: 375px) {
+	.banner-content {
+		margin-left: 12px;
+		margin-right: 12px;
+	}
+}
+
+@media only screen and (max-width: 280px) {
+	.banner-content {
+		margin-left: 4px;
+		margin-right: 4px;
+	}
+
+	h1 {
+		font-size: 32px;
+	}
+
+	.text {
+		font-size: 20px;
+	}
+
+	.h5 {
+		font-size: 18px;
+	}
+}

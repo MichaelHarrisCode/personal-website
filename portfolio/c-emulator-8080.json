@@ -1,0 +1,14 @@
+{
+	"title":"8080 Emulator in C",
+	"image": "images/8080.png",
+	"skills": [
+		"C",
+		"Computer Architecture and Organization"
+	],
+	"about": [
+		"Emulator for 8080 processor made in C. Still a work in progress.",
+		"Currently, it's capable of disassembling a program written in 8080 assembly. It'll take a stream of 8bit numbers, then perform operations based on the given opcode.",
+		"I wanted to make this because I believe it will help strengthen my C abilities, while also being able to build a project to show. The added benefit is the ability to play games built for the 8080 processor. Additionally, I feel like it also teaches me more about how CPU's work, through application. However, I feel like the biggest benefit is that this will build up knowledge needed for operating system development."
+	],
+	"github": "https://github.com/MichaelHarrisCode/8080emulator"
+}
