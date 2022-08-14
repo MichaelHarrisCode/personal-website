@@ -11,6 +11,10 @@
 		width: 30%;
 	}
 
+	#text {
+		margin-top: 40px;
+	}
+
 	.font-weight-bold {
 		font-size: 150px;
 		text-shadow: 5px 5px black;
@@ -31,8 +35,12 @@
 
 @media only screen and (max-width: 1920px) {
 	#main-image {
-		margin-top: 72px;
+		margin-top: 120px;
 		width: 25%;
+	}
+
+	#text {
+		margin-top: 20px;
 	}
 
 	.font-weight-bold {
@@ -54,6 +62,10 @@
 @media only screen and (max-width: 1440px) {
 	#main-image {
 		width: 30%;
+	}
+
+	#text {
+		margin-top: 0px;
 	}
 
 	.about {
